@@ -9,12 +9,14 @@ function App() {
   // Here we are definining where the "user" state actually exists
   const [user, setUser] = useState(null);
 
+  const [color, setColor] = useState({ value: "light" })
+
   // Here we are defining what is the value provided by our context
   // We are "Providing" this value so that descendent elements can "Consume" it from the context
-  const contextValue = { user, setUser };
+  const contextValue = { user, setUser, color, setColor };
   return (
     <UserContext.Provider value={contextValue}>
-      <div className="App">
+      <div className={`App ${color.value == "dark" ? "darkmode" : "lightmode"}`}>
 
         <h1>Codelicious TODO</h1>
 

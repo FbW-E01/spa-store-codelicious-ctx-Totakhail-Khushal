@@ -1,14 +1,25 @@
 .App {
-    margin: 2em auto;
-    width: 40vw;
-    min-width: 400px;
-    padding: 2em;
-    border: 0.1em solid black;
-    border-radius: 0.5em;
-    background: #fff;
-    overflow: hidden;
+  margin: 2em auto;
+  width: 40vw;
+  min-width: 400px;
+  padding: 2em;
+  border: 0.1em solid black;
+  border-radius: 0.5em;
+  background: #fff;
+  overflow: hidden;
 }
 
-.App > p, .App > h1 {
-    text-align: center;
+.App > p,
+.App > h1 {
+  text-align: center;
+}
+
+.darkmode {
+  background-color: #333;
+  color: white;
+  transition: 2s;
+}
+.lightmode {
+  background-color: rgba(44, 57, 61, 0.431);
+  transition: 2s;
 }
